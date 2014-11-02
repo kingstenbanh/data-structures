@@ -3,4 +3,18 @@ var Stack = function() {
   // but try not not reference your old code in writing the new style.
 };
 
+Stack.prototype.push = function(value) {
 
+};
+
+Stack.prototype.pop = function() {
+
+};
+
+Stack.prototype.size = function() {
+  
+};
+
+Stack.prototype.isEmpty = function() {
+  
+};
