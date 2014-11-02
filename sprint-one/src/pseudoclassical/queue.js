@@ -6,7 +6,8 @@ var Queue = function() {
 };
 
 Queue.prototype.enqueue = function(value) {
-  
+  this.storage[this.count] = value;
+  this.count++;
 };
 
 Queue.prototype.dequeue = function() {
@@ -18,6 +19,6 @@ Queue.prototype.size = function() {
 };
 
 Queue.prototype.isEmpty = function() {
-  return this.count <= 0;
+  return this.count <= 0; 
 };
 
