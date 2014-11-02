@@ -3,6 +3,7 @@ var makeQueue = function(){
 
   // Use an object with numeric keys to store values
   var storage = {};
+  var count = 0;
 
   // Implement the methods below
 
@@ -13,6 +14,7 @@ var makeQueue = function(){
   };
 
   newQueue.size = function(){
+    return count < 0 ? 0 : count;
   };
 
   return newQueue;
