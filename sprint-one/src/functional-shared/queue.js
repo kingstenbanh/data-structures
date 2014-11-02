@@ -21,7 +21,7 @@ queueMethods.dequeue = function() {
 };
 
 queueMethods.size = function() {
-
+  return this.count < 0 ? 0 : this.count;
 };
 
 queueMethods.isEmpty = function() {
