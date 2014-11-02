@@ -18,6 +18,6 @@ Queue.prototype.size = function() {
 };
 
 Queue.prototype.isEmpty = function() {
-  
+  return this.count <= 0;
 };
 
