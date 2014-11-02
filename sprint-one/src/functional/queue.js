@@ -13,6 +13,10 @@ var makeQueue = function(){
   };
 
   newQueue.dequeue = function(){
+    count--;
+    var result = storage[count];
+    delete storage[count];
+    return result;
   };
 
   newQueue.size = function(){
