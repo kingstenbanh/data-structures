@@ -24,7 +24,7 @@ queueMethods.size = function() {
 };
 
 queueMethod.isEmpty = function() {
-
+  return this.count <= 0;
 };
 
 
