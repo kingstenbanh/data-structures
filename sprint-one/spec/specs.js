@@ -153,6 +153,18 @@ define([
         expect(queue.dequeue()).to.equal('b');
       });
 
+      it('report true after removing the recently added item', function() {
+        queue.enqueue('a');
+        queue.dequeue();
+        expect(queue.isEmpty()).to.equal(true);
+      });
+
+      it('reports true if removing more items than were added', function() {
+        queue.enqueue('a');
+        queue.dequeue();
+        queue.dequeue();
+        expect(queue.isEmpty()).to.equal(true);
+      });
     });
 
     describe('queue-specific behavior', function(){
