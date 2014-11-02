@@ -1,18 +1,20 @@
 var makeStack = function(){
-  var someInstance = {};
+  var newStack = {};
+  var count = 0;
 
   // Use an object with numeric keys to store values
   var storage = {};
 
   // Implement the methods below
-  someInstance.push = function(value){
+  newStack.push = function(value){
   };
 
-  someInstance.pop = function(){
+  newStack.pop = function(){
   };
 
-  someInstance.size = function(){
+  newStack.size = function(){
+    return count;
   };
 
-  return someInstance;
+  return newStack;
 };
