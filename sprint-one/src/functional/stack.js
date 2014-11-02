@@ -16,7 +16,7 @@ var makeStack = function(){
   };
 
   newStack.size = function(){
-    return count;
+    return count < 0 ? 0 : count;
   };
 
   return newStack;
