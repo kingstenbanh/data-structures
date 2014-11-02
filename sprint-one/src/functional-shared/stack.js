@@ -22,7 +22,7 @@ stackMethods.pop = function() {
 };
 
 stackMethods.size = function() {
-
+  return this.count < 0 ? 0 : this.count;
 };
 
 stackMethods.isEmpty = function() {
