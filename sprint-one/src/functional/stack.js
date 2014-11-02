@@ -7,6 +7,8 @@ var makeStack = function(){
 
   // Implement the methods below
   newStack.push = function(value){
+    storage[value] = value;
+    count++;
   };
 
   newStack.pop = function(){
