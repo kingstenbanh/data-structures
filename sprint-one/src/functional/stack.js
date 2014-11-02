@@ -12,6 +12,7 @@ var makeStack = function(){
   };
 
   newStack.pop = function(){
+    count--;
   };
 
   newStack.size = function(){
