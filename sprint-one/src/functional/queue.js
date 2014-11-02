@@ -13,9 +13,10 @@ var makeQueue = function(){
   };
 
   newQueue.dequeue = function(){
+    var result = storage[0];
+    delete storage[0];
+
     count--;
-    var result = storage[count];
-    delete storage[count];
     return result;
   };
 
