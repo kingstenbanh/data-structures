@@ -32,7 +32,7 @@ queueMethods.size = function() {
 };
 
 queueMethods.isEmpty = function() {
-
+  return this.count <= 0;
 };
 
 
