@@ -69,6 +69,18 @@ define([
         expect(stack.pop()).to.equal('b');
       });
 
+      it('report true after removing the recently added item', function() {
+        stack.push('a');
+        stack.pop();
+        expect(stack.isEmpty()).to.equal(true);
+      });
+
+      it('reports true if removing more items than were added', function() {
+        stack.push('a');
+        stack.pop();
+        stack.pop();
+        expect(stack.isEmpty()).to.equal(true);
+      });
     });
 
     describe('stack-specific behavior', function(){

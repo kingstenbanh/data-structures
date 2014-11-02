@@ -22,5 +22,8 @@ var makeStack = function(){
     return count < 0 ? 0 : count;
   };
 
+  newStack.isEmpty = function() {
+    return count <= 0;
+  }
   return newStack;
 };
