@@ -24,7 +24,7 @@ stackMethods.size = function() {
 };
 
 stackMethods.isEmpty = function() {
-
+  return this.count <= 0;
 };
 
 
