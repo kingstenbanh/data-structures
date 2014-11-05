@@ -32,7 +32,12 @@ var makeLinkedList = function(){
   };
 
   list.contains = function(target){
-
+    for (var property in list) {
+      if (list[property].value === target) {
+        return true;
+      }
+    }
+    return false;
   };
 
   return list;
