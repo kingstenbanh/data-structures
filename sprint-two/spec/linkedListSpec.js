@@ -1,8 +1,8 @@
-describe('linkedList', function() {
+describe('linkedList-Pseudoclassical', function() {
   var linkedList;
 
   beforeEach(function() {
-    linkedList = makeLinkedList();
+    linkedList = new LinkedList();
   });
 
   it('should have a head and tail', function() {
