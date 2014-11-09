@@ -1,4 +1,4 @@
-describe('tree', function() {
+describe('tree-Pseudoclassical', function() {
   var tree;
 
   beforeEach(function() {
