@@ -1,20 +1,15 @@
-var makeTree = function(value){
+var Tree = function(value){
   var newTree = {};
-  newTree.value = value;
-  newTree.children = undefined;
-  return newTree;
+  this.value = value;
+  this.children = [];
 };
 
 
-
-
-var treeMethods = {};
-
-treeMethods.addChild = function(value){
-
+Tree.prototype.addChild = function(value){
+  this.children.push(new Tree(value));
 };
 
-treeMethods.contains = function(target){
+Tree.prototype.contains = function(target){
 
 };
 
